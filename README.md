@@ -5,7 +5,7 @@ Possible solutions to Wordscapes, a mobile game for the android operating system
 [play store](https://play.google.com/store/apps/details?id=com.peoplefun.wordcross)
 
 ## Usage
-`python main.py [--help] --wordlist --characters --pattern`
+`python main.py [--help] --wordlist WORDLIST --characters CHARACTERS --pattern PATTERN`
 
 - --wordlist: path to text file containing a list of words (short form is -w)
 - --characters: scrambled characters from which real words are to be formed (short form is -c)
