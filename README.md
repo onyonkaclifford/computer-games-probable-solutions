@@ -1,4 +1,4 @@
-[![Tests](https://github.com/onyonkaclifford/wordscapes/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/onyonkaclifford/wordscapes/actions/workflows/tests.yml)
+[![tests](https://github.com/onyonkaclifford/computer-games-probable-solutions/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/onyonkaclifford/computer-games-probable-solutions/actions/workflows/tests.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/onyonkaclifford/wordscapes/blob/main/LICENSE)
 
 Possible solutions to select computer games
