@@ -46,8 +46,8 @@ def get_most_probable_words(wordlist, characters, pattern):
     """Get a list of most probable words
 
     >>> word_list = ["trail", "banana", "frail", "drain"]
-    >>> get_most_probable_words(word_list, "+rail")
-    ['trail', 'frail']
+    >>> get_most_probable_words(word_list, "filyar", "+rail")
+    ['frail']
 
     :param wordlist: wordlist to use
     :param characters: scrambled characters
