@@ -59,25 +59,22 @@ def get_most_probable_words(wordlist, characters, pattern):
 
     results = []
     len_of_pattern = len(pattern)
+    count_of_characters = {i: characters.count(i) for i in characters}
     non_empty_indices_in_pattern = {i: char for i, char in enumerate(pattern) if char != "+"}
 
     for word in wordlist:
-        to_skip = False
         if len(word) != len_of_pattern:
             continue
 
         for char in word:
-            if char not in characters:
-                to_skip = True
-                break
-        if to_skip:
-            continue
-
-        for idx, char in non_empty_indices_in_pattern.items():
-            if word[idx] != char:
+            if char not in characters or word.count(char) > count_of_characters[char]:
                 break
         else:
-            results.append(word)
+            for idx, char in non_empty_indices_in_pattern.items():
+                if word[idx] != char:
+                    break
+            else:
+                results.append(word)
 
     return results
 
