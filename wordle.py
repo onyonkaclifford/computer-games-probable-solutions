@@ -20,7 +20,6 @@ def get_most_probable_words(wordlist, consists_of, not_consists_of, pattern):
 
     results = []
     len_of_pattern = len(pattern)
-    count_of_consists_of_characters = {i: consists_of.count(i) for i in consists_of}
     non_empty_indices_in_pattern = {i: char for i, char in enumerate(pattern) if char != "+"}
 
     for word in wordlist:
@@ -29,7 +28,7 @@ def get_most_probable_words(wordlist, consists_of, not_consists_of, pattern):
             continue
 
         for char in consists_of:
-            if char not in word or word.count(char) > count_of_consists_of_characters[char]:
+            if char not in word:
                 to_skip = True
                 break
         if to_skip:
