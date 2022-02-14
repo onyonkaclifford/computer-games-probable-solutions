@@ -46,6 +46,28 @@ Wordle is a mobile game for the android operating system, downloadable from the
 - `python wordle.py -w wordlists/2.txt -p +r+s+ -c rhs`
 - `python wordle.py -w wordlists/2.txt -p +rus+ -c rhs -nc cza`
 
+# SortPuz
+
+SortPuz is a mobile game for the android operating system, downloadable from the
+[play store](https://play.google.com/store/apps/details?id=sortpuz.water.sort.puzzle.game)
+
+#### Usage
+
+`python sortpuz.py [--help] [--quick] [--hide-progress] [--length LENGTH] FORMATION [FORMATION ...]`
+
+- --quick (-q): whether to use depth first search, which most of the time is quicker, though the resultant solution may
+  not be optimal. The default is breadth first search, which is guaranteed to provide an optimal solution, though is
+  slower most of the time.
+- --hide-progress (-hp): whether to hide progress
+- --length (-l): length of a full column
+- --consists-of (-c): characters that need to be present in the words to be formed
+- positional arguments: only one positional argument is used, the arrangement of the colour columns
+
+#### Examples
+
+- `python sortpuz.py -v o,o o,o`
+- `python sortpuz.py -q -v o,o o,o`
+
 # Tests
 To run tests: `python -m doctest -v *.py`
 
