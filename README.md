@@ -60,13 +60,12 @@ SortPuz is a mobile game for the android operating system, downloadable from the
   slower most of the time.
 - --hide-progress (-hp): whether to hide progress
 - --length (-l): length of a full column
-- --consists-of (-c): characters that need to be present in the words to be formed
 - positional arguments: only one positional argument is used, the arrangement of the colour columns
 
 #### Examples
 
-- `python sortpuz.py -v o,o o,o`
-- `python sortpuz.py -q -v o,o o,o`
+- `python sortpuz.py o,o o,o`
+- `python sortpuz.py -q o,o o,o`
 
 # Tests
 To run tests: `python -m doctest -v *.py`
